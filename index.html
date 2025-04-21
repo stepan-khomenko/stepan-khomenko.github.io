@@ -67,6 +67,14 @@
             h2 {
                 font-size: 1.2em;
             }
+            h3 {
+                font-size: 1em;
+                text-transform: uppercase;
+            }
+            h4 {
+                font-size: 0.8em;
+                margin-top: 0;
+            }
             img {
                 width: 100%;
                 height: 15vw;
@@ -74,14 +82,9 @@
                 object-position: 0 20%;                
                 margin: 20px -3px 0px
             }
-            h3 {
-                font-size: 1em;
-                text-transform: uppercase;
-            }
-            aside h3 {
-                color: var(--light-light-gray);
-                text-decoration: underline;
-                line-height: 1.5;
+            ul {
+                margin-top: 0;
+                padding-left: 2em;
             }
             main h3 {
                 margin: 0 -5px 15px;
@@ -98,29 +101,30 @@
             main li {
                 font-size: 0.8em;
             }
-            h5 {
-                font-size: 0.9em;
-                font-weight: normal;
-                color: #030329;
-                margin-top: 0;
+            main a {
+                color: #3131b3;
+                text-decoration: none;
+            }
+            aside h3 {
+                color: var(--light-light-gray);
+                text-decoration: underline;
+                line-height: 1.5;
             }
             aside a {
                 color: #cccccc;
                 text-decoration: none;
             }
-            main a {
-                color: #3131b3;
-                text-decoration: none;
+            article h5 {
+                font-size: 0.9em;
+                font-weight: normal;
+                color: #030329;
+                margin-top: 0;
             }
             a:hover {
                 text-decoration: underline;
             }
             figure {
                 margin-top: 0;
-            }
-            ul {
-                margin-top: 0;
-                padding-left: 2em;
             }
             .m-0 {
                 margin: 0;
@@ -176,7 +180,8 @@
                 <figure>
                     <figcaption>
                         <h1>Stepan Mudrik</h1>
-                        <h2>Développeur web</h2>
+                        <h2>Développeur web full-stack</h2>
+                        <h4>spécialisé JavaScript (React, TypeScript) & PHP (Laravel)</h4>
                     </figcaption>
                     <img src="./images/portfolio.png" alt="photo">
                 </figure>
@@ -207,7 +212,7 @@
                     <h3>Compétences techniques</h3>
                     <div class="skill__wrapper">
                         <span class="skill__title">Languages:&nbsp;</span>
-                        <div class="skill">PHP, JavaScript</div>
+                        <div class="skill">PHP, JavaScript, TypeScript</div>
                     </div>
                     <div class="skill__wrapper">
                         <span class="skill__title">Frameworks:&nbsp;</span>
@@ -215,11 +220,11 @@
                     </div>
                     <div class="skill__wrapper">
                         <span class="skill__title">SGBDs:&nbsp;</span>
-                        <div class="skill">MySQL,&nbsp;</div>
+                        <div class="skill">MySQL</div>
                     </div>
                     <div class="skill__wrapper">
                         <span class="skill__title">Web services:&nbsp;</span>
-                        <div class="skill">GraphQL</div>
+                        <div class="skill">GraphQL, APIs REST</div>
                     </div>
                 </section>
 
@@ -230,9 +235,8 @@
                         <ul>
                             <li>capacité d’organisation</li>
                             <li>sens des responsabilités</li>
-                            <li>travail en équipe</li>
+                            <li>autonomie et esprit d'équipe</li>
                             <li>flexibilité et adaptabilité</li>
-                            <li>autonomie</li>
                         </ul>
                     </div>
                 </section>
@@ -242,10 +246,10 @@
                     <h3>Langues</h3>
                     <div class="skill__wrapper">
                         <ul>
-                            <li>Français - courant</li>
-                            <li>Anglais - intermédiaire</li>
-                            <li>Italien - notions</li>
-                            <li>Russe - langue maternelle</li>
+                            <li>Français : courant</li>
+                            <li>Anglais : intermédiaire</li>
+                            <li>Italien : notions</li>
+                            <li>Russe : langue maternelle</li>
                         </ul>
                     </div>
                 </section>
@@ -253,12 +257,11 @@
 
             <main>
                 <section>
-                    <h3>Présentation</h3>
+                    <h3>Profil</h3>
                     <p id="presentation__block">
-                        Développeur web full-stack, niveau intermédiaire.<br>
-                        Ayant 5 ans d’expérience dans le domaine de nouvelles technologies, 
-                        j’ai pu déjà acquérir de solides connaissances en programmation et je suis ouvert à 
-                        une nouvelle opportunité. 
+                        Développeur web full-stack avec 5 ans d'expérience, spécialisé dans les technologies JavaScript (React, TypeScript) et PHP (Laravel). 
+                        Passionné par le développement de solutions performantes, évolutives et bien structurées, je suis ouvert à une nouvelle opportunité en CDI hybride, 
+                        où je pourrai mettre à profit ma polyvalence tout en approfondissant mon expertise backend
                     </p>
                 </section>
 
@@ -271,13 +274,11 @@
                                 <a href="https://magmatechnology.io/" target="_blank">Magma Technology</a>
                                 <span class="pipe">|</span> Paris <span class="pipe">|</span> 2022 - à présent</h5>
                             <ul>
-                                <li>Coder le front et back pour de nouvelles fonctionnalitées de la plateforme</li>
-                                <li>Investiguer et résoudre des bugs</li>
-                                <li>Écrire des testes unitaires</li>
-                                <li>Participer à la code review</li>
-                                <li>Participer à l’estimation des tâches</li>
-                                <li>Réalisation à temps des tâches dans le cadre des sprints</li>
-                                <li>Appliquer les meilleures pratiques pour écrire du code propre, lisible et évolutif</li>
+                                <li>Développement de fonctionnalités front-end et back-end</li>
+                                <li>Investigation et résolution de bugs</li>
+                                <li>Rédaction de tests unitaires et revue de code</li>
+                                <li>Estimation et réalisation de tâches en environnement agile (sprints)</li>
+                                <li>Application des bonnes pratiques pour un code propre, lisible et maintenable</li>
                             </ul>
                         </article>
                         <article>
@@ -286,12 +287,10 @@
                                 <a href="https://labcollector.com" target="_blank">Agilebio</a>
                                 <span class="pipe">|</span> Paris <span class="pipe">|</span> 2019 - 2022</h5>
                             <ul>
-                                <li>Maintenir le code du logiciel</li>
-                                <li>Coder le front et back pour de nouvelles fonctionnalitées du logiciel</li>
-                                <li>Développer de l'API</li>
-                                <li>Rechercher et résoudre des bugs</li>
-                                <li>Support dans la conception de solutions</li>
-                                <li>Répondre aux tickets des clients</li>
+                                <li>Maintenance et évolution d’un logiciel métier</li>
+                                <li>Création de nouvelles fonctionnalités front-end et back-end</li>
+                                <li>Développement d’APIs et résolution de bugs</li>
+                                <li>Participation à la conception technique et support utilisateur</li>
                             </ul>
                         </article>
                         <article>
@@ -303,7 +302,7 @@
                                 <span class="pipe">|</span> Paris <span class="pipe">|</span> 2019
                             </h5>
                             <ul>
-                                <li>Création d’un SaaS à l'aide du framework Laravel</li>
+                                <li>Développement d’un SaaS en Laravel</li>
                             </ul>
                         </article>
                         <article>
@@ -311,15 +310,9 @@
                             <h5>Meatline <span class="pipe">|</span> Russie <span class="pipe">|</span> 2010 - 2015</h5>
                         </article>
                         <article>
-                            <h4>Responsable de vente</h4>
+                            <h4>Responsable de vente / Agent commercial</h4>
                             <h5>
-                                Coca-cola HBS <span class="pipe">|</span> Russie <span class="pipe">|</span> 2007 - 2010
-                            </h5>
-                        </article>
-                        <article>
-                            <h4>Agent commercial</h4>
-                            <h5>
-                                Coca-cola HBS <span class="pipe">|</span> Russie <span class="pipe">|</span> 2005 - 2007
+                                Coca-cola HBS <span class="pipe">|</span> Russie <span class="pipe">|</span> 2005 - 2010
                             </h5>
                         </article>
                     </div>
