@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+
+        <style>
+            @import url('./assets/css/all.min.css');
+
+            :root {
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: calc(0.3em + 1vw);
+                box-sizing: border-box;
+                --light-light-gray: #f7f7f7;
+            }
+            * {
+                margin: 0;
+                box-sizing: inherit;
+            }
+            * > * {
+                margin-top: 0.5em;
+            }
+            body {
+                margin: 0;
+                overflow-x: hidden;
+            }
+            #content {
+                display: grid;
+                grid-template-areas: 'left right';
+                margin: 0;
+            }
+            aside {
+                grid-area: left;
+                display: flex;
+                flex-direction: column;
+                width: 30vw;
+                background-color: #030329;
+                color: #cccccc;
+                padding: 10px;
+            }
+            main {
+                grid-area: right;
+                width: 70vw;
+                background-color: #fbfbfb;
+                color: #979798;
+                margin-top: 0;
+                padding: 10px 1em;
+            }
+            aside section {
+                margin-bottom: 1em;
+            }
+            main section:not(:last-child) {
+                margin-bottom: 2em;
+            }
+            main section:first-child {
+                margin-top: 0;
+            }
+            article {
+                margin-bottom: 30px;
+            }
+            h1 {
+                font-size: 1.5rem;
+                color: var(--light-light-gray);
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            h3 {
+                font-size: 1em;
+                text-transform: uppercase;
+            }
+            h4 {
+                font-size: 0.8em;
+                margin-top: 0;
+            }
+            img {
+                width: 100%;
+                height: 15vw;
+                object-fit: cover;
+                object-position: 0 20%;
+                margin: 20px -3px 0px
+            }
+            ul {
+                margin-top: 0;
+                padding-left: 2em;
+            }
+            main h3 {
+                margin: 0 -5px 15px;
+                padding: 0.3em 0.6em;
+                background-color: #030329;
+                color: #fff;
+                letter-spacing: 0.06em;
+            }
+            main h4 {
+                color: #030329;
+                font-size: 0.85em;
+                text-transform: uppercase;
+            }
+            main li {
+                font-size: 0.8em;
+            }
+            main a {
+                color: #3131b3;
+                text-decoration: none;
+            }
+            aside h3 {
+                color: var(--light-light-gray);
+                text-decoration: underline;
+                line-height: 1.5;
+            }
+            aside a {
+                color: #cccccc;
+                text-decoration: none;
+            }
+            article h5 {
+                font-size: 0.9em;
+                font-weight: normal;
+                color: #030329;
+                margin-top: 0;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            figure {
+                margin-top: 0;
+            }
+            .m-0 {
+                margin: 0;
+            }
+            .op-5 {
+                opacity: .5;
+            }
+            .d-f {
+                display: flex;
+            }
+            .icon-span {
+                width: 1em;
+                margin: 0 5px 0;
+                display: inline-block;
+                text-align: center;
+            }
+            i, .skill__title {
+                color: var(--light-light-gray);
+            }
+            .skill__wrapper {
+                display: flex;
+                margin: 0 0 0 0.3em;
+            }
+            .skill__title {
+                flex: 1;
+                min-width: 12vw;
+            }
+            .skill {
+                flex:3;
+            }
+            .pipe {
+                color: #979798;
+            }
+            #presentation__block {
+                font-size: 0.9em;
+                line-height: 1.3;
+            }
+            @media (max-width: 672px) {
+                .to-hide:not(.icon-span) {
+                    display: none;
+                }
+            }
+            @media (max-width: 552px) {
+                .icon-span.to-hide {
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="content">
+            <aside>
+                <figure>
+                    <figcaption>
+                        <h1>Stepan Khomenko</h1>
+                        <h2>Full-Stack Web Developer</h2>
+                        <h4>6 years of experience • Mid/Senior level</h4>
+                    </figcaption>
+                    <img src="./images/portfolio.png" alt="photo">
+                </figure>
+
+                <!-- General info  -->
+                <section>
+                    <h3>Contact</h3>
+                    <div class="m-0">
+                        <span class="icon-span to-hide"><i class="fal fa-home"></i></span>
+                        6 bis Rue Bellavoine, <span class="to-hide">78230</span> Le Pecq
+                    </div>
+                    <div class="m-0">
+                        <span class="icon-span to-hide"><i class="fal fa-mobile"></i></span>
+                        <a href="tel:+33781932282">+33 7 81 93 22 82</a>
+                    </div>
+                    <div class="m-0">
+                        <span class="icon-span to-hide"><i class="fal fa-at"></i></span>
+                        <a href = "mailto: stepan.khomenko@gmail.com">stepan.khomenko@gmail.com</a>
+                    </div>
+                    <div class="m-0">
+                        <span class="icon-span to-hide"><i class="fab fa-linkedin"></i></span>
+                        <a href="https://www.linkedin.com/in/stepan-khomenko-2b932a174/" target="_blank">linkedin.com/stepan-khomenko</a>
+                    </div>
+                </section>
+
+                <!-- Technical skills  -->
+                <section>
+                    <h3>Technical Skills</h3>
+                    <div style="margin-left:0.3em;">
+                        <h5>Languages & Frameworks</h5>
+                        <ul>
+                            <li>Backend: PHP (Laravel, Lighthouse), TypeScript/Node.js (NestJS)</li>
+                            <li>Frontend: JavaScript (React)</li>
+                        </ul>
+                        <h5>Infrastructure & Tools</h5>
+                        <ul>
+                            <li>AWS (Lambda, Step Functions, CloudWatch)</li>
+                            <li>GraphQL, REST APIs</li>
+                            <li>Docker, Git, Jest/PHPUnit</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Personal skills  -->
+                <section>
+                    <h3>Personal Skills</h3>
+                    <div class="skill__wrapper">
+                        <ul>
+                            <li>organizational skills</li>
+                            <li>sense of responsibility</li>
+                            <li>autonomy and team spirit</li>
+                            <li>flexibility and adaptability</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Languages  -->
+                <section>
+                    <h3>Languages</h3>
+                    <div class="skill__wrapper">
+                        <ul>
+                            <li>French: fluent</li>
+                            <li>English: intermediate</li>
+                            <li>Italian: basic</li>
+                            <li>Russian: native</li>
+                        </ul>
+                    </div>
+                </section>
+            </aside>
+
+            <main>
+                <section>
+                    <h3>Profile</h3>
+                    <p id="presentation__block">
+                        Full-stack web developer with 6 years of experience, specialized in JavaScript technologies (React, TypeScript, Node.js) and PHP (Laravel).
+                        Currently at a mid to senior level, I am looking for a position with more responsibilities and technical impact.
+                        I want to join an ambitious project in strong growth, in a demanding but human environment, where I can continue to evolve long-term.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Professional Experience</h3>
+                    <div>
+                        <article>
+                            <h4>Full-Stack Web Developer</h4>
+                            <h5>
+                                <a href="https://magmatechnology.io/" target="_blank">Magma Technology</a>
+                                <span class="pipe">|</span> Paris <span class="pipe">|</span> 2022 - present</h5>
+                            <ul>
+                                <li>Development of a real-time logistics tracking platform: Laravel backend (large-scale event-driven architecture, GraphQL API), React frontend (interactive mapping), serverless IoT integration (30 device types)</li>
+                                <li>Development of front-end and back-end features</li>
+                                <li>Bug investigation and resolution</li>
+                                <li>Implementation and maintenance of serverless workflows via AWS (Lambda, Step Functions, CloudWatch)</li>
+                                <li>Writing unit tests and code reviews</li>
+                                <li>Task estimation and delivery in agile environment (sprints)</li>
+                                <li>Application of best practices for clean, readable and maintainable code</li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h4>Full-Stack Web Developer</h4>
+                            <h5>
+                                <a href="https://labcollector.com" target="_blank">Agilebio</a>
+                                <span class="pipe">|</span> Paris <span class="pipe">|</span> 2019 - 2022</h5>
+                            <ul>
+                                <li>Maintenance and modernization of a legacy monolith (LabCollector) in PHP and vanilla JavaScript</li>
+                                <li>Development of complementary modules (addons) extending system functionalities</li>
+                                <li>Creation of new front-end and back-end features</li>
+                                <li>API development and bug resolution</li>
+                                <li>Participation in technical design and user support</li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h4>Full-Stack Web Developer Intern</h4>
+                            <h5>
+                                <a href="https://www.emazing-retailing.com/en/index.html" target="_blanck">
+                                    eMazing-retailing
+                                </a>
+                                <span class="pipe">|</span> Paris <span class="pipe">|</span> 2019
+                            </h5>
+                            <ul>
+                                <li>Development of a SaaS application in Laravel</li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h4>Co-founder</h4>
+                            <h5>Meatline <span class="pipe">|</span> Russia <span class="pipe">|</span> 2010 - 2015</h5>
+                        </article>
+                        <article>
+                            <h4>Sales Manager / Sales Representative</h4>
+                            <h5>
+                                Coca-cola HBS <span class="pipe">|</span> Russia <span class="pipe">|</span> 2005 - 2010
+                            </h5>
+                        </article>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Education</h3>
+                    <div>
+                        <article>
+                            <h4>Bachelor's Degree in Computer Science</h4>
+                            <h5>
+                                University of Orléans&nbsp;<span class="pipe">|</span>&nbsp;Orléans&nbsp;<span class="pipe">|</span>&nbsp;2017 - 2019
+                            </h5>
+                        </article>
+                        <article>
+                            <h4>French Language Courses</h4>
+                            <h5>
+                                Paris City Hall&nbsp;<span class="pipe">|</span>&nbsp;Paris&nbsp;<span class="pipe">|</span>&nbsp;2016 - 2017
+                            </h5>
+                        </article>
+                        <article>
+                            <h4>Master's Degree in Economics and Management</h4>
+                            <h5>
+                                Omsk State Technical University&nbsp;<span class="pipe">|</span>&nbsp;Russia&nbsp;<span class="pipe">|</span>&nbsp;2000 - 2005
+                            </h5>
+                        </article>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
