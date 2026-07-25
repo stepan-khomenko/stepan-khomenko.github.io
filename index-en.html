@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title></title>
+        <title>Stepan Khomenko — Full-Stack Developer</title>
 
         <style>
             @import url('./assets/css/all.min.css');
@@ -44,7 +44,7 @@
                 grid-area: right;
                 width: 70vw;
                 background-color: #fbfbfb;
-                color: #979798;
+                color: #333333;
                 margin-top: 0;
                 padding: 10px 1em;
             }
@@ -113,6 +113,7 @@
             aside a {
                 color: #cccccc;
                 text-decoration: none;
+                overflow-wrap: anywhere;
             }
             article h5 {
                 font-size: 0.9em;
@@ -158,6 +159,10 @@
             .pipe {
                 color: #979798;
             }
+            .company-intro {
+                font-size: 0.8em;
+                font-style: italic;
+            }
             #presentation__block {
                 font-size: 0.9em;
                 line-height: 1.3;
@@ -172,6 +177,11 @@
                     display: none;
                 }
             }
+            @media print {
+                article {
+                    margin-bottom: 15px;
+                }
+            }
         </style>
     </head>
     <body>
@@ -181,7 +191,7 @@
                     <figcaption>
                         <h1>Stepan Khomenko</h1>
                         <h2>Full-Stack Web Developer</h2>
-                        <h4>7 years of experience • Mid/Senior level • French-Russian nationality</h4>
+                        <h4>7+ years of experience • EU citizen</h4>
                     </figcaption>
                     <img src="./images/portfolio.png" alt="photo">
                 </figure>
@@ -199,41 +209,26 @@
                     </div>
                     <div class="m-0">
                         <span class="icon-span to-hide"><i class="fal fa-at"></i></span>
-                        <a href = "mailto: stepan.khomenko@gmail.com">stepan.khomenko@gmail.com</a>
+                        <a href="mailto:stepan.khomenko@gmail.com">stepan.khomenko@gmail.com</a>
                     </div>
                     <div class="m-0">
                         <span class="icon-span to-hide"><i class="fab fa-linkedin"></i></span>
-                        <a href="https://www.linkedin.com/in/stepan-khomenko-2b932a174/" target="_blank">linkedin.com/stepan-khomenko</a>
+                        <a href="https://www.linkedin.com/in/stepan-khomenko-2b932a174/" target="_blank">linkedin.com/in/stepan-khomenko-2b932a174</a>
                     </div>
                 </section>
 
                 <!-- Technical skills  -->
                 <section>
                     <h3>Technical Skills</h3>
-                    <div style="margin-left:0.3em;">
-                        <h5>Languages & Frameworks</h5>
-                        <ul>
-                            <li>Backend: PHP (Laravel, Lighthouse), TypeScript/Node.js (NestJS)</li>
-                            <li>Frontend: JavaScript (React)</li>
-                        </ul>
-                        <h5>Infrastructure & Tools</h5>
-                        <ul>
-                            <li>AWS (Lambda, Step Functions, CloudWatch)</li>
-                            <li>GraphQL, REST APIs</li>
-                            <li>Docker, Git, Jest/PHPUnit</li>
-                        </ul>
-                    </div>
-                </section>
-
-                <!-- Personal skills  -->
-                <section>
-                    <h3>Personal Skills</h3>
                     <div class="skill__wrapper">
                         <ul>
-                            <li>organizational skills</li>
-                            <li>sense of responsibility</li>
-                            <li>autonomy and team spirit</li>
-                            <li>flexibility and adaptability</li>
+                            <li>Back end: Node.js/TypeScript, PHP (Laravel, Lighthouse), REST, GraphQL</li>
+                            <li>Front end: JavaScript (React)</li>
+                            <li>AWS: Lambda, Step Functions, API Gateway, SQS, SAM, CloudWatch</li>
+                            <li>Databases: MySQL, PostgreSQL, Redis</li>
+                            <li>Data: Tableau</li>
+                            <li>Monitoring: Sentry, Elastic</li>
+                            <li>Tools: Docker, Git, Jest, PHPUnit</li>
                         </ul>
                     </div>
                 </section>
@@ -244,7 +239,7 @@
                     <div class="skill__wrapper">
                         <ul>
                             <li>French: fluent</li>
-                            <li>English: intermediate</li>
+                            <li>English: professional working proficiency (B2)</li>
                             <li>Italian: basic</li>
                             <li>Russian: native</li>
                         </ul>
@@ -256,9 +251,10 @@
                 <section>
                     <h3>Profile</h3>
                     <p id="presentation__block">
-                        Full-stack web developer with 7 years of experience, specialized in JavaScript technologies (React, TypeScript, Node.js) and PHP (Laravel).
-                        Currently at a mid to senior level, I am looking for a position with more responsibilities and technical impact.
-                        I want to join an ambitious project in strong growth, in a demanding but human environment, where I can continue to evolve long-term.
+                        Full-stack developer with over seven years of experience in product companies.
+                        At Magma Technology, I work across the whole stack of a B2B IoT platform: React front end, PHP/Laravel APIs,
+                        a serverless Node.js/TypeScript pipeline on AWS, and Tableau dashboards for our clients.
+                        I'm looking for a role where I can keep building and contribute to technical decisions.
                     </p>
                 </section>
 
@@ -270,33 +266,34 @@
                             <h5>
                                 <a href="https://magmatechnology.io/" target="_blank">Magma Technology</a>
                                 <span class="pipe">|</span> Paris <span class="pipe">|</span> 2022 - present</h5>
+                            <p class="company-intro">Start-up of 11 people, including 3 developers, with a B2B IoT platform that tracks deliveries for large companies.</p>
                             <ul>
-                                <li>Development of a real-time logistics tracking platform: Laravel backend (large-scale event-driven architecture, GraphQL API), React frontend (interactive mapping), serverless IoT integration (30 device types)</li>
-                                <li>Development of front-end and back-end features</li>
-                                <li>Bug investigation and resolution</li>
-                                <li>Implementation and maintenance of serverless workflows via AWS (Lambda, Step Functions, CloudWatch)</li>
-                                <li>Writing unit tests and code reviews</li>
-                                <li>Task estimation and delivery in agile environment (sprints)</li>
-                                <li>Application of best practices for clean, readable and maintainable code</li>
+                                <li>Work across the whole stack: React front end (interactive maps), PHP/Laravel APIs (REST and GraphQL), and a serverless Node.js/TypeScript pipeline on AWS.</li>
+                                <li>Maintain the IoT ingestion pipeline (API Gateway, Step Functions, Lambda, SQS): more than 100,000 messages a day from about 40,000 devices, with retries and duplicate protection. Deployed with AWS SAM, monitored with Sentry and Elastic.</li>
+                                <li>Fixed a race condition in our alerts: when two messages from the same device arrived close together, an alert could compare the wrong positions.</li>
+                                <li>Added three cache layers in front of paid geolocation calls (Google, HERE), including a cache for "not found" answers, so we stopped paying twice for the same lookup.</li>
+                                <li>Traced silent failures with a third-party API (ShipsGo): our hourly job sent 102 requests against a limit of 100 per minute. Found the same hidden failures in 3 of our 6 API clients and proposed one shared rule for all of them.</li>
+                                <li>Build Tableau dashboards for our clients, and meet our project managers every week to go through new client requests.</li>
+                                <li>Use Claude Code for AI-assisted development: maintain project rules and skills for it, and review every change before it ships.</li>
                             </ul>
                         </article>
                         <article>
                             <h4>Full-Stack Web Developer</h4>
                             <h5>
-                                <a href="https://labcollector.com" target="_blank">Agilebio</a>
+                                <a href="https://labcollector.com" target="_blank">AgileBio</a>
                                 <span class="pipe">|</span> Paris <span class="pipe">|</span> 2019 - 2022</h5>
+                            <p class="company-intro">Publisher of LabCollector, a lab information management system (LIMS) written in plain PHP and JavaScript.</p>
                             <ul>
-                                <li>Maintenance and modernization of a legacy monolith (LabCollector) in PHP and vanilla JavaScript</li>
-                                <li>Development of complementary modules (addons) extending system functionalities</li>
-                                <li>Creation of new front-end and back-end features</li>
-                                <li>API development and bug resolution</li>
-                                <li>Participation in technical design and user support</li>
+                                <li>Built a multi-tenant web app from scratch for labs and pharmacies running Covid tests: isolated data and permissions per lab, patient records, and access to results through a secure email link (token, no account needed). Handled back end, front end and security.</li>
+                                <li>Worked on a visual query builder that lets biologists query their data without SQL (filters across modules, saved queries, CSV and Excel export), with the SQL built dynamically from their choices.</li>
+                                <li>Refactored barcode and label generation: each module (samples, plasmids, antibodies…) had its own code; I moved it into one shared component, unified the formats and added printable labels.</li>
+                                <li>Built a drag-and-drop add-on to move samples between storage boxes (grids of hundreds of cells), with multi-select and business rules (no occupied cells, sample-type restrictions).</li>
                             </ul>
                         </article>
                         <article>
                             <h4>Full-Stack Web Developer Intern</h4>
                             <h5>
-                                <a href="https://www.emazing-retailing.com/en/index.html" target="_blanck">
+                                <a href="https://www.emazing-retailing.com/en/index.html" target="_blank">
                                     eMazing-retailing
                                 </a>
                                 <span class="pipe">|</span> Paris <span class="pipe">|</span> 2019
@@ -308,11 +305,12 @@
                         <article>
                             <h4>Co-founder</h4>
                             <h5>Meatline <span class="pipe">|</span> Russia <span class="pipe">|</span> 2010 - 2015</h5>
+                            <p class="company-intro">Co-founded and ran a B2B food distribution company: we delivered meat to restaurants, canteens and food factories.</p>
                         </article>
                         <article>
                             <h4>Sales Manager / Sales Representative</h4>
                             <h5>
-                                Coca-cola HBS <span class="pipe">|</span> Russia <span class="pipe">|</span> 2005 - 2010
+                                Coca-Cola HBC <span class="pipe">|</span> Russia <span class="pipe">|</span> 2005 - 2010
                             </h5>
                         </article>
                     </div>

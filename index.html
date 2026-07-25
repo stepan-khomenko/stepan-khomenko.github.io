@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title></title>
+        <title>Stepan Khomenko — Développeur full-stack</title>
 
         <style>
             @import url('./assets/css/all.min.css');
@@ -44,7 +44,7 @@
                 grid-area: right;
                 width: 70vw;
                 background-color: #fbfbfb;
-                color: #979798;
+                color: #333333;
                 margin-top: 0;
                 padding: 10px 1em;
             }
@@ -113,6 +113,7 @@
             aside a {
                 color: #cccccc;
                 text-decoration: none;
+                overflow-wrap: anywhere;
             }
             article h5 {
                 font-size: 0.9em;
@@ -158,6 +159,10 @@
             .pipe {
                 color: #979798;
             }
+            .company-intro {
+                font-size: 0.8em;
+                font-style: italic;
+            }
             #presentation__block {
                 font-size: 0.9em;
                 line-height: 1.3;
@@ -172,6 +177,11 @@
                     display: none;
                 }
             }
+            @media print {
+                article {
+                    margin-bottom: 15px;
+                }
+            }
         </style>
     </head>
     <body>
@@ -181,7 +191,7 @@
                     <figcaption>
                         <h1>Stepan Khomenko</h1>
                         <h2>Développeur web full-stack</h2>
-                        <h4>7 ans d'expérience • Niveau confirmé/senior • Nationalité franco-russe</h4>
+                        <h4>7+ ans d'expérience • Nationalité française</h4>
                     </figcaption>
                     <img src="./images/portfolio.png" alt="photo">
                 </figure>
@@ -199,41 +209,26 @@
                     </div>
                     <div class="m-0">
                         <span class="icon-span to-hide"><i class="fal fa-at"></i></span>
-                        <a href = "mailto: stepan.khomenko@gmail.com">stepan.khomenko@gmail.com</a>
+                        <a href="mailto:stepan.khomenko@gmail.com">stepan.khomenko@gmail.com</a>
                     </div>
                     <div class="m-0">
                         <span class="icon-span to-hide"><i class="fab fa-linkedin"></i></span>
-                        <a href="https://www.linkedin.com/in/stepan-khomenko-2b932a174/" target="_blank">linkedin.com/stepan-khomenko</a>
+                        <a href="https://www.linkedin.com/in/stepan-khomenko-2b932a174/" target="_blank">linkedin.com/in/stepan-khomenko-2b932a174</a>
                     </div>
                 </section>
 
                 <!-- Technical skills  -->
                 <section>
                     <h3>Compétences techniques</h3>
-                    <div style="margin-left:0.3em;">
-                        <h5>Languages & Frameworks</h5>
-                        <ul>
-                            <li>Backend: PHP (Laravel, Lighthouse), TypeScript/Node.js (NestJS)</li>
-                            <li>Frontend: JavaScript (React)</li>
-                        </ul>
-                        <h5>Infrastructure & Tools</h5>
-                        <ul>
-                            <li>AWS (Lambda, Step Functions, CloudWatch)</li>
-                            <li>GraphQL, APIs REST</li>
-                            <li>Docker, Git, Jest/PHPUnit</li>
-                        </ul>
-                    </div>
-                </section>
-
-                <!-- Personal skills  -->
-                <section>
-                    <h3>Compétences personnelles</h3>
                     <div class="skill__wrapper">
                         <ul>
-                            <li>capacité d’organisation</li>
-                            <li>sens des responsabilités</li>
-                            <li>autonomie et esprit d'équipe</li>
-                            <li>flexibilité et adaptabilité</li>
+                            <li>Back-end : Node.js/TypeScript, PHP (Laravel, Lighthouse), REST, GraphQL</li>
+                            <li>Front-end : JavaScript (React)</li>
+                            <li>AWS : Lambda, Step Functions, API Gateway, SQS, SAM, CloudWatch</li>
+                            <li>Bases de données : MySQL, PostgreSQL, Redis</li>
+                            <li>Données : Tableau</li>
+                            <li>Supervision : Sentry, Elastic</li>
+                            <li>Outils : Docker, Git, Jest, PHPUnit</li>
                         </ul>
                     </div>
                 </section>
@@ -244,7 +239,7 @@
                     <div class="skill__wrapper">
                         <ul>
                             <li>Français : courant</li>
-                            <li>Anglais : intermédiaire</li>
+                            <li>Anglais : courant professionnel (B2)</li>
                             <li>Italien : notions</li>
                             <li>Russe : langue maternelle</li>
                         </ul>
@@ -256,9 +251,10 @@
                 <section>
                     <h3>Profil</h3>
                     <p id="presentation__block">
-                        Développeur web full-stack avec 7 ans d'expérience, spécialisé dans les technologies JavaScript (React, TypeScript, Node.js) et PHP (Laravel).
-                        Actuellement entre un niveau confirmé et senior, je recherche un poste avec plus de responsabilités et d'impact technique.
-                        Je souhaite rejoindre un projet ambitieux en forte croissance, dans un environnement exigeant mais humain, où je pourrai continuer à évoluer à long terme.
+                        Développeur full-stack avec plus de sept ans d'expérience chez des éditeurs de logiciels.
+                        Chez Magma Technology, je travaille sur toute la stack d'une plateforme IoT B2B : front-end React, API PHP/Laravel,
+                        pipeline serverless Node.js/TypeScript sur AWS, et tableaux de bord Tableau pour nos clients.
+                        Je recherche un poste où je pourrai continuer à développer et participer aux décisions techniques.
                     </p>
                 </section>
 
@@ -270,33 +266,34 @@
                             <h5>
                                 <a href="https://magmatechnology.io/" target="_blank">Magma Technology</a>
                                 <span class="pipe">|</span> Paris <span class="pipe">|</span> 2022 - à présent</h5>
+                            <p class="company-intro">Start-up de 11 personnes, dont 3 développeurs, qui édite une plateforme IoT B2B de suivi des livraisons pour de grandes entreprises.</p>
                             <ul>
-                                <li>Développement d'une plateforme de suivi logistique en temps réel : backend Laravel (architecture événementielle à grande échelle, API GraphQL), frontend React (cartographie interactive), intégration IoT serverless (30 types de dispositifs)</li>
-                                <li>Développement de fonctionnalités front-end et back-end</li>
-                                <li>Investigation et résolution de bugs</li>
-                                <li>Mise en place et maintenance de flux serverless via AWS (Lambda, Step Functions, CloudWatch)</li>
-                                <li>Rédaction de tests unitaires et revue de code</li>
-                                <li>Estimation et réalisation de tâches en environnement agile (sprints)</li>
-                                <li>Application des bonnes pratiques pour un code propre, lisible et maintenable</li>
+                                <li>Travail sur toute la stack : front-end React (cartes interactives), API PHP/Laravel (REST et GraphQL) et pipeline serverless Node.js/TypeScript sur AWS.</li>
+                                <li>Maintenance du pipeline d'ingestion IoT (API Gateway, Step Functions, Lambda, SQS) : plus de 100 000 messages par jour provenant d'environ 40 000 appareils, avec relances et protection contre les doublons. Déploiement avec AWS SAM, supervision avec Sentry et Elastic.</li>
+                                <li>Correction d'une race condition dans nos alertes : quand deux messages d'un même appareil arrivaient presque en même temps, une alerte pouvait comparer les mauvaises positions.</li>
+                                <li>Ajout de trois niveaux de cache devant les appels payants de géolocalisation (Google, HERE), dont un cache pour les réponses « introuvable », pour ne plus payer deux fois la même recherche.</li>
+                                <li>Analyse de pannes silencieuses avec une API tierce (ShipsGo) : notre tâche horaire envoyait 102 requêtes pour une limite de 100 par minute. Le même problème caché touchait 3 de nos 6 clients d'API ; proposition d'une règle commune pour tous.</li>
+                                <li>Création de tableaux de bord Tableau pour nos clients, et point hebdomadaire avec nos chefs de projet sur les nouvelles demandes clients.</li>
+                                <li>Développement assisté par IA avec Claude Code : maintenance des règles et skills du projet, relecture de chaque modification avant sa mise en production.</li>
                             </ul>
                         </article>
                         <article>
                             <h4>Développeur web full-stack</h4>
                             <h5>
-                                <a href="https://labcollector.com" target="_blank">Agilebio</a>
+                                <a href="https://labcollector.com" target="_blank">AgileBio</a>
                                 <span class="pipe">|</span> Paris <span class="pipe">|</span> 2019 - 2022</h5>
+                            <p class="company-intro">Éditeur de LabCollector, un logiciel de gestion de laboratoire (LIMS) écrit en PHP et JavaScript natifs.</p>
                             <ul>
-                                <li>Maintenance et modernisation d'un monolithe legacy (LabCollector) en PHP et JavaScript natif</li>
-                                <li>Développement de modules complémentaires (addons) étendant les fonctionnalités du système</li>
-                                <li>Création de nouvelles fonctionnalités front-end et back-end</li>
-                                <li>Développement d'APIs et résolution de bugs</li>
-                                <li>Participation à la conception technique et support utilisateur</li>
+                                <li>Développement de zéro d'une application web multi-tenant pour les laboratoires et pharmacies réalisant des tests Covid : données et droits isolés par laboratoire, dossiers patients, accès aux résultats par un lien sécurisé envoyé par e-mail (jeton, sans création de compte). Prise en charge du back-end, du front-end et de la sécurité.</li>
+                                <li>Travail sur un générateur visuel de requêtes qui permet aux biologistes d'interroger leurs données sans SQL (filtres entre modules, requêtes enregistrées, export CSV et Excel), avec une requête SQL construite dynamiquement à partir de leurs choix.</li>
+                                <li>Refonte de la génération des codes-barres et des étiquettes : chaque module (échantillons, plasmides, anticorps…) avait son propre code ; regroupement dans un composant commun, formats unifiés et ajout d'étiquettes imprimables.</li>
+                                <li>Développement d'un module en glisser-déposer pour déplacer des échantillons entre boîtes de stockage (grilles de centaines de cases), avec sélection multiple et règles métier (pas de case occupée, restrictions par type d'échantillon).</li>
                             </ul>
                         </article>
                         <article>
                             <h4>Développeur web full-stack stagiaire</h4>
                             <h5>
-                                <a href="https://www.emazing-retailing.com/en/index.html" target="_blanck">
+                                <a href="https://www.emazing-retailing.com/en/index.html" target="_blank">
                                     eMazing-retailing
                                 </a>
                                 <span class="pipe">|</span> Paris <span class="pipe">|</span> 2019
@@ -308,11 +305,12 @@
                         <article>
                             <h4>Co-fondateur</h4>
                             <h5>Meatline <span class="pipe">|</span> Russie <span class="pipe">|</span> 2010 - 2015</h5>
+                            <p class="company-intro">Co-fondation et direction d'une société de distribution alimentaire B2B : livraison de viande aux restaurants, cantines et usines agroalimentaires.</p>
                         </article>
                         <article>
                             <h4>Responsable de vente / Agent commercial</h4>
                             <h5>
-                                Coca-cola HBS <span class="pipe">|</span> Russie <span class="pipe">|</span> 2005 - 2010
+                                Coca-Cola HBC <span class="pipe">|</span> Russie <span class="pipe">|</span> 2005 - 2010
                             </h5>
                         </article>
                     </div>
