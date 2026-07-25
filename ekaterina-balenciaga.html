@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CV - Ekaterina Mudrik</title>
+
+        <style>
+            @import url('./assets/css/all.min.css');
+
+            :root {
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: calc(0.3em + 1vw);
+                box-sizing: border-box;
+                --light-light-gray: #f7f7f7;
+            }
+            * {
+                margin: 0;
+                box-sizing: inherit;
+            }
+            * > * {
+                margin-top: 0.35em;
+            }
+            main * {
+                margin-top: 0.5em;
+            }
+            body {
+                margin: 0;
+                overflow-x: hidden;
+            }
+            #content {
+                display: grid;
+                grid-template-areas: 'left right';
+                margin: 0;
+            }
+            aside {
+                grid-area: left;
+                display: flex;
+                flex-direction: column;
+                width: 30vw;
+                background-color: #030329;
+                color: #cccccc;
+                padding: 10px;
+            }
+            main {
+                grid-area: right;
+                width: 70vw;
+                background-color: #fbfbfb;
+                color: #979798;
+                margin-top: 0;
+                padding: 10px 1em;
+            }
+            main section:not(:last-child) {
+                margin-bottom: 1em;
+            }
+            main section:first-child {
+                margin-top: 0;
+            }
+            .compact-list li strong {
+                color: #030329;
+                font-weight: 600;
+            }
+            h1 {
+                font-size: 1.5rem;
+                color: var(--light-light-gray);
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            h3 {
+                font-size: 1em;
+                text-transform: uppercase;
+            }
+            h4 {
+                font-size: 0.8em;
+                margin-top: 0;
+            }
+            img {
+                width: 100%;
+                height: 36vw;
+                object-fit: cover;
+                object-position: 50% 50%;
+                margin: 20px -3px 0px
+            }
+            ul {
+                margin-top: 0;
+                padding-left: 2em;
+            }
+            main h3 {
+                margin: 0 -5px 8px;
+                padding: 0.2em 0.6em;
+                background-color: #030329;
+                color: #fff;
+                letter-spacing: 0.06em;
+            }
+            main h4 {
+                color: #030329;
+                font-size: 0.85em;
+                text-transform: uppercase;
+            }
+            main li {
+                font-size: 0.8em;
+                margin-top: 0.15em;
+            }
+            main a {
+                color: #3131b3;
+                text-decoration: none;
+            }
+            aside h3 {
+                color: var(--light-light-gray);
+                text-decoration: underline;
+                line-height: 1.5;
+            }
+            aside a {
+                color: #cccccc;
+                text-decoration: none;
+            }
+            article h5 {
+                font-size: 0.9em;
+                font-weight: normal;
+                color: #030329;
+                margin-top: 0;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            figure {
+                margin-top: 0;
+            }
+            .m-0 {
+                margin: 0;
+            }
+            .op-5 {
+                opacity: .5;
+            }
+            .d-f {
+                display: flex;
+            }
+            .icon-span {
+                width: 1em;
+                margin: 0 5px 0;
+                display: inline-block;
+                text-align: center;
+            }
+            i, .skill__title {
+                color: var(--light-light-gray);
+            }
+            .skill__wrapper {
+                display: flex;
+                margin: 0 0 0 0.3em;
+            }
+            .skill__title {
+                flex: 1;
+                min-width: 12vw;
+            }
+            .skill {
+                flex:3;
+            }
+            .pipe {
+                color: #979798;
+            }
+            #presentation__block {
+                font-size: 0.9em;
+                line-height: 1.3;
+            }
+            .company-desc {
+                font-size: 0.7em;
+                font-style: italic;
+                margin: 0 0 0.4em;
+            }
+            @media (max-width: 672px) {
+                .to-hide:not(.icon-span) {
+                    display: none;
+                }
+            }
+            @media (max-width: 552px) {
+                .icon-span.to-hide {
+                    display: none;
+                }
+            }
+
+            /* Print / PDF: the screen layout is vw-based, which rescales unpredictably on paper.
+               Pin everything to fixed units so the CV always lands on a single A4 page. */
+            @page {
+                size: A4 portrait;
+                margin: 0;
+            }
+            @media print {
+                :root {
+                    font-size: 9.5pt;
+                }
+                body {
+                    -webkit-print-color-adjust: exact;
+                    print-color-adjust: exact;
+                }
+                #content {
+                    width: 210mm;
+                    min-height: 297mm;
+                }
+                aside {
+                    width: 63mm;
+                    padding: 5mm 4mm;
+                }
+                main {
+                    width: 147mm;
+                    padding: 5mm 5mm;
+                }
+                main * {
+                    margin-top: 0.3em;
+                }
+                main section:not(:last-child) {
+                    margin-bottom: 2.5mm;
+                }
+                main h3 {
+                    margin: 0 -5px 1.5mm;
+                }
+                img {
+                    height: 75mm;
+                    margin: 3mm 0 0;
+                }
+                .skill__title {
+                    min-width: 0;
+                }
+                /* Never split an entry across pages if it ever does overflow. */
+                main section, article, .compact-list li {
+                    break-inside: avoid;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="content">
+            <aside>
+                <figure>
+                    <figcaption>
+                        <h1>Ekaterina Mudrik</h1>
+                        <h2>Chargée de contenus multilingues &amp; localisation</h2>
+                        <h4>Médias &amp; luxe • Digital &amp; e-commerce</h4>
+                    </figcaption>
+                    <img src="./images/ekaterina-web.jpg" alt="photo">
+                </figure>
+
+                <!-- General info  -->
+                <section>
+                    <h3>Contacts</h3>
+                    <div class="m-0">
+                        <span class="icon-span to-hide"><i class="fal fa-home"></i></span>
+                        Paris, France
+                    </div>
+                    <div class="m-0">
+                        <span class="icon-span to-hide"><i class="fal fa-mobile"></i></span>
+                        <a href="tel:+33634571071">+33 6 34 57 10 71</a>
+                    </div>
+                    <div class="m-0">
+                        <span class="icon-span to-hide"><i class="fal fa-at"></i></span>
+                        <a href="mailto: mudrikeka@gmail.com">mudrikeka@gmail.com</a>
+                    </div>
+                    <div class="m-0">
+                        <span class="icon-span to-hide"><i class="fab fa-linkedin"></i></span>
+                        <a href="https://www.linkedin.com/in/mudrik-e" target="_blank">linkedin.com/in/mudrik-e</a>
+                    </div>
+                </section>
+
+                <!-- Key skills  -->
+                <section>
+                    <h3>Compétences</h3>
+                    <div class="skill__wrapper">
+                        <ul>
+                            <li>content management &amp; coordination éditoriale</li>
+                            <li>gestion de projets de traduction</li>
+                            <li>localisation &amp; adaptation de contenus</li>
+                            <li>contenus web, e-commerce &amp; social media</li>
+                            <li>contrôle qualité &amp; cohérence éditoriale</li>
+                            <li>SEO, veille concurrentielle &amp; analyse interculturelle</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Technical skills  -->
+                <section>
+                    <h3>Compétences techniques</h3>
+                    <div class="skill__wrapper">
+                        <ul>
+                            <li>CMS Pixelle • PIM</li>
+                            <li>Trados Studio • MemoQ • Phrase • Smartling • Memsource</li>
+                            <li>Microsoft Excel (CSV) • Salesforce • Jira • Confluence</li>
+                            <li>Adobe Acrobat Pro • Canva • IA générative</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Languages  -->
+                <section>
+                    <h3>Langues de travail</h3>
+                    <div class="skill__wrapper">
+                        <ul>
+                            <li>Russe : langue maternelle</li>
+                            <li>Français : courant</li>
+                            <li>Anglais : courant</li>
+                            <li>Italien : courant</li>
+                            <li>Espagnol : notions</li>
+                        </ul>
+                    </div>
+                </section>
+            </aside>
+
+            <main>
+                <section>
+                    <h3>Profil</h3>
+                    <p id="presentation__block">
+                        Professionnelle du content management, de la localisation et de la communication digitale, avec plusieurs années d'expérience dans les médias et le luxe.
+                        Expertise en coordination de contenus multilingues, gestion des traductions, contrôle qualité et déploiement de contenus web et e-commerce.
+                        Expérience auprès de marques internationales et d'un réseau de plus de 50 éditions.<br>
+                        Multilingue : français, anglais, italien, russe. Nationalité française.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Expérience professionnelle</h3>
+                    <div>
+                        <article>
+                            <h4>Chargée de coordination éditoriale internationale</h4>
+                            <h5>
+                                <a href="https://www.elle.fr/" target="_blank">ELLE International</a>
+                                <span class="pipe">|</span> Paris <span class="pipe">|</span> 07/2024 - à présent</h5>
+                            <p class="company-desc">Réseau média international présent dans plus de 50 pays, 21 M de lectrices et plus de 175 M de personnes touchées chaque mois.</p>
+                            <ul>
+                                <li>Coordination internationale des contenus print et digitaux pour les réseaux ELLE, ELLE Décoration et ELLE à Table, avec un accompagnement dédié des éditions en France, Italie, Espagne et Allemagne</li>
+                                <li>Pilotage des flux de contenus internationaux — articles, couvertures, photographies, illustrations et vidéos — en lien avec les rédactions, les équipes internes et les partenaires externes</li>
+                                <li>Négociation des droits d'auteur, des droits à l'image et des licences auprès des agences, photographes, ayants droit, attachés de presse et talents</li>
+                                <li>Référente CMS (Pixelle) : intégration, structuration et gestion des contenus digitaux, accompagnement des utilisateurs et optimisation des processus de publication</li>
+                                <li>Veille éditoriale, valorisation des contenus digitaux et amélioration continue des processus</li>
+                                <li>Contribution à la croissance de l'activité éditoriale sur les marchés italien (+51 %) et espagnol (+69 %) en 2025</li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h4>Consultante en localisation &amp; contenus multilingues</h4>
+                            <h5>Indépendante <span class="pipe">|</span> Paris / Turin <span class="pipe">|</span> 09/2019 - 07/2024</h5>
+                            <ul>
+                                <li>Traduction, localisation et adaptation interculturelle de contenus éditoriaux et digitaux (web, e-commerce, social media) pour des maisons internationales du luxe, avec optimisation SEO</li>
+                                <li>Localisation de plus de 15 numéros de Dior Magazine et de plusieurs éditions du Monde d'Hermès : traduction, révision et contrôle qualité des épreuves PDF</li>
+                                <li>Gestion et fidélisation d'un portefeuille de plus de 20 clients internationaux ; accompagnement des projets de communication et de localisation</li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h4>Conseillère clientèle digitale</h4>
+                            <h5>
+                                <a href="https://www.dior.com/" target="_blank">Christian Dior Couture</a>
+                                <span class="pipe">|</span> Paris <span class="pipe">|</span> 01/2023 - 06/2024</h5>
+                            <p class="company-desc">Maison de luxe française fondée en 1947, présente dans plus de 40 pays.</p>
+                            <ul>
+                                <li>Conseil multilingue auprès d'une clientèle internationale haut de gamme, fondé sur une connaissance approfondie des produits, des collections, des savoir-faire et de l'héritage de la Maison ; coordination avec les équipes e-commerce, retail et logistique</li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h4>Cheffe de projets traduction &amp; contenus digitaux</h4>
+                            <h5>
+                                <a href="https://www.datawords.com/" target="_blank">Datawords</a>
+                                <span class="pipe">|</span> Levallois-Perret <span class="pipe">|</span> 09/2015 - 09/2019</h5>
+                            <p class="company-desc">Agence internationale de marketing digital (800+ collaborateurs).</p>
+                            <ul>
+                                <li>Pilotage du cycle complet de projets de traduction, de localisation et d'adaptation de contenus web, e-commerce et social media pour des marques internationales</li>
+                                <li>Coordination des traducteurs, relecteurs, filiales locales et agences ; lancement, suivi et contrôle des traductions</li>
+                                <li>Création et mise à jour de guides de traduction, harmonisation des contenus et contrôle qualité afin de garantir la cohérence éditoriale et le tone of voice des marques</li>
+                                <li>Préparation et structuration des contenus (Excel, CSV, PIM), accompagnement du déploiement sur les plateformes digitales et optimisation des processus</li>
+                                <li>Conception d'un programme de contrôle qualité et formation de plus de 100 collaborateurs au sein du groupe</li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Expériences complémentaires</h3>
+                    <ul class="compact-list">
+                        <li><strong>Cheffe de projets senior - traduction &amp; contenus réglementés</strong> · Labrador Language Services, Paris <span class="pipe">|</span> 01/2020 - 05/2020</li>
+                        <li><strong>Coordinatrice éditoriale</strong> · CGI, Tours <span class="pipe">|</span> 09/2014 - 09/2015</li>
+                        <li><strong>Coordinatrice éditoriale</strong> · Hachette Collections, Paris <span class="pipe">|</span> 10/2013 - 07/2014</li>
+                        <li><strong>Stagiaire en syndication &amp; licensing</strong> · ELLE International, Levallois-Perret <span class="pipe">|</span> 06/2013 - 10/2013</li>
+                        <li><strong>Rédactrice culture puis Responsable iconographie &amp; production visuelle</strong> · ELLE Russie, Moscou <span class="pipe">|</span> 07/2008 - 06/2013</li>
+                        <li><strong>Iconographe</strong> · Harper's Bazaar Russie, Moscou <span class="pipe">|</span> 09/2007 - 07/2008</li>
+                        <li><strong>Journaliste freelance</strong> · rédaction d'articles, interviews et reportages pour Grazia, Burda et d'autres médias <span class="pipe">|</span> 2006 - 2007</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Formation</h3>
+                    <div>
+                        <article>
+                            <h4>MBA - Luxury Brand Marketing &amp; International Management</h4>
+                            <h5>Sup de Luxe&nbsp;<span class="pipe">|</span>&nbsp;Paris</h5>
+                        </article>
+                        <article>
+                            <h4>Master (5 ans) - Traduction &amp; Interprétation</h4>
+                            <h5>Université d'État d'Omsk&nbsp;<span class="pipe">|</span>&nbsp;Russie</h5>
+                        </article>
+                        <article>
+                            <h4>Master 1 &amp; Licence - Histoire de l'art</h4>
+                            <h5>Paris 1 Panthéon-Sorbonne · Université de Bourgogne&nbsp;<span class="pipe">|</span>&nbsp;Paris / Dijon</h5>
+                        </article>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>

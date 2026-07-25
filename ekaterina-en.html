@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CV - Ekaterina Mudrik</title>
+
+        <style>
+            @import url('./assets/css/all.min.css');
+
+            :root {
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: calc(0.3em + 1vw);
+                box-sizing: border-box;
+                --light-light-gray: #f7f7f7;
+            }
+            * {
+                margin: 0;
+                box-sizing: inherit;
+            }
+            * > * {
+                margin-top: 0.35em;
+            }
+            main * {
+                margin-top: 0.5em;
+            }
+            body {
+                margin: 0;
+                overflow-x: hidden;
+            }
+            #content {
+                display: grid;
+                grid-template-areas: 'left right';
+                margin: 0;
+            }
+            aside {
+                grid-area: left;
+                display: flex;
+                flex-direction: column;
+                width: 30vw;
+                background-color: #030329;
+                color: #cccccc;
+                padding: 10px;
+            }
+            main {
+                grid-area: right;
+                width: 70vw;
+                background-color: #fbfbfb;
+                color: #979798;
+                margin-top: 0;
+                padding: 10px 1em;
+            }
+            main section:not(:last-child) {
+                margin-bottom: 1em;
+            }
+            main section:first-child {
+                margin-top: 0;
+            }
+            .compact-list li strong {
+                color: #030329;
+                font-weight: 600;
+            }
+            h1 {
+                font-size: 1.5rem;
+                color: var(--light-light-gray);
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            h3 {
+                font-size: 1em;
+                text-transform: uppercase;
+            }
+            h4 {
+                font-size: 0.8em;
+                margin-top: 0;
+            }
+            img {
+                width: 100%;
+                height: 36vw;
+                object-fit: cover;
+                object-position: 50% 50%;
+                margin: 20px -3px 0px
+            }
+            ul {
+                margin-top: 0;
+                padding-left: 2em;
+            }
+            main h3 {
+                margin: 0 -5px 8px;
+                padding: 0.2em 0.6em;
+                background-color: #030329;
+                color: #fff;
+                letter-spacing: 0.06em;
+            }
+            main h4 {
+                color: #030329;
+                font-size: 0.85em;
+                text-transform: uppercase;
+            }
+            main li {
+                font-size: 0.8em;
+                margin-top: 0.15em;
+            }
+            main a {
+                color: #3131b3;
+                text-decoration: none;
+            }
+            aside h3 {
+                color: var(--light-light-gray);
+                text-decoration: underline;
+                line-height: 1.5;
+            }
+            aside a {
+                color: #cccccc;
+                text-decoration: none;
+            }
+            article h5 {
+                font-size: 0.9em;
+                font-weight: normal;
+                color: #030329;
+                margin-top: 0;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            figure {
+                margin-top: 0;
+            }
+            .m-0 {
+                margin: 0;
+            }
+            .op-5 {
+                opacity: .5;
+            }
+            .d-f {
+                display: flex;
+            }
+            .icon-span {
+                width: 1em;
+                margin: 0 5px 0;
+                display: inline-block;
+                text-align: center;
+            }
+            i, .skill__title {
+                color: var(--light-light-gray);
+            }
+            .skill__wrapper {
+                display: flex;
+                margin: 0 0 0 0.3em;
+            }
+            .skill__title {
+                flex: 1;
+                min-width: 12vw;
+            }
+            .skill {
+                flex:3;
+            }
+            .pipe {
+                color: #979798;
+            }
+            #presentation__block {
+                font-size: 0.9em;
+                line-height: 1.3;
+            }
+            .company-desc {
+                font-size: 0.7em;
+                font-style: italic;
+                margin: 0 0 0.4em;
+            }
+            @media (max-width: 672px) {
+                .to-hide:not(.icon-span) {
+                    display: none;
+                }
+            }
+            @media (max-width: 552px) {
+                .icon-span.to-hide {
+                    display: none;
+                }
+            }
+            @media print {
+                @page {
+                    margin: 8mm;
+                }
+                :root {
+                    font-size: calc(0.28em + 0.94vw);
+                }
+                * > * {
+                    margin-top: 0.25em;
+                }
+                main * {
+                    margin-top: 0.32em;
+                }
+                main section:not(:last-child) {
+                    margin-bottom: 0.55em;
+                }
+                main h3 {
+                    margin: 0 -5px 5px;
+                }
+                main li {
+                    margin-top: 0.1em;
+                    line-height: 1.25;
+                }
+                aside li {
+                    line-height: 1.25;
+                }
+                .company-desc {
+                    margin: 0 0 0.25em;
+                }
+                #presentation__block {
+                    line-height: 1.25;
+                }
+                img {
+                    height: 26vw;
+                    margin: 12px -3px 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="content">
+            <aside>
+                <figure>
+                    <figcaption>
+                        <h1>Ekaterina Mudrik</h1>
+                        <h2>Editorial &amp; Content Project Manager</h2>
+                        <h4>20+ years of experience • Media &amp; luxury • Multilingual</h4>
+                    </figcaption>
+                    <img src="./images/ekaterina-web.jpg" alt="photo">
+                </figure>
+
+                <!-- General info  -->
+                <section>
+                    <h3>Contact</h3>
+                    <div class="m-0">
+                        <span class="icon-span to-hide"><i class="fal fa-home"></i></span>
+                        Paris, France
+                    </div>
+                    <div class="m-0">
+                        <span class="icon-span to-hide"><i class="fal fa-mobile"></i></span>
+                        <a href="tel:+33634571071">+33 6 34 57 10 71</a>
+                    </div>
+                    <div class="m-0">
+                        <span class="icon-span to-hide"><i class="fal fa-at"></i></span>
+                        <a href="mailto: mudrikeka@gmail.com">mudrikeka@gmail.com</a>
+                    </div>
+                    <div class="m-0">
+                        <span class="icon-span to-hide"><i class="fab fa-linkedin"></i></span>
+                        <a href="https://www.linkedin.com/in/mudrik-e" target="_blank">linkedin.com/in/mudrik-e</a>
+                    </div>
+                </section>
+
+                <!-- Key skills  -->
+                <section>
+                    <h3>Core competencies</h3>
+                    <div class="skill__wrapper">
+                        <ul>
+                            <li>content management</li>
+                            <li>editorial &amp; digital communication</li>
+                            <li>localization &amp; translation management</li>
+                            <li>international project management</li>
+                            <li>multilingual content production</li>
+                            <li>cross-functional collaboration</li>
+                            <li>content quality assurance</li>
+                            <li>SEO &amp; content optimization</li>
+                            <li>licensing &amp; copyright management</li>
+                            <li>stakeholder management</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Technical skills  -->
+                <section>
+                    <h3>Technical skills</h3>
+                    <div class="skill__wrapper">
+                        <ul>
+                            <li>CMS (Pixelle), PIM, Salesforce, Jira, Confluence</li>
+                            <li>Trados Studio, memoQ, Phrase, Smartling</li>
+                            <li>Microsoft Office, Adobe Acrobat Pro, Canva</li>
+                            <li>AI tools</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Languages  -->
+                <section>
+                    <h3>Languages</h3>
+                    <div class="skill__wrapper">
+                        <ul>
+                            <li>French: full professional proficiency</li>
+                            <li>English: full professional proficiency</li>
+                            <li>Italian: full professional proficiency</li>
+                            <li>Russian: native</li>
+                            <li>Spanish: basic</li>
+                        </ul>
+                    </div>
+                </section>
+            </aside>
+
+            <main>
+                <section>
+                    <h3>Summary</h3>
+                    <p id="presentation__block">
+                        International Content &amp; Editorial Project Manager with extensive experience delivering multilingual editorial and digital content for global media brands and luxury maisons.
+                        Fluent in French, English, Italian and Russian, with deep expertise in content management, localization, editorial operations and cross-functional project coordination.
+                        Skilled at managing international stakeholders and complex multilingual projects across print, digital and e-commerce environments.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Professional highlights</h3>
+                    <ul class="compact-list">
+                        <li>International career spanning the media, luxury and digital industries</li>
+                        <li>Deep expertise in multilingual content, localization and editorial workflows</li>
+                        <li>Skilled at coordinating international stakeholders and cross-functional teams</li>
+                        <li>Proven track record of delivering complex projects in fast-paced, multicultural environments</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Professional experience</h3>
+                    <div>
+                        <article>
+                            <h4>International Editorial &amp; Content Project Manager</h4>
+                            <h5>
+                                <a href="https://www.elle.fr/" target="_blank">ELLE International</a>
+                                <span class="pipe">|</span> Paris <span class="pipe">|</span> Jul 2024 - Present</h5>
+                            <p class="company-desc">Global media network spanning 50+ editions and reaching over 175 million readers each month.</p>
+                            <ul>
+                                <li>Oversee print and digital content across the international editions of ELLE, ELLE Decoration and ELLE à Table</li>
+                                <li>Manage international editorial requests spanning articles, cover stories, photography, illustration and video</li>
+                                <li>Serve as the daily point of contact between editorial teams, PR agencies, photographers, rights holders and international partners</li>
+                                <li>Negotiate copyright, image licensing and content usage rights</li>
+                                <li>Administer the Pixelle CMS, handling content integration, quality assurance, user support and workflow optimization</li>
+                                <li>Drove significant growth in editorial content reuse across key European markets — up 51 % in Italy and 69 % in Spain</li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h4>Content &amp; Localization Consultant</h4>
+                            <h5>Freelance <span class="pipe">|</span> Paris / Turin <span class="pipe">|</span> Sep 2019 - Jul 2024</h5>
+                            <ul>
+                                <li>Delivered multilingual editorial, marketing and digital content for international luxury brands</li>
+                                <li>Localized 15+ issues of Dior Magazine and multiple issues of Le Monde d'Hermès, including translation, editing and proofreading</li>
+                                <li>Adapted web, e-commerce and social media content for international markets with SEO in mind</li>
+                                <li>Built and maintained long-term relationships with 20+ international clients</li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h4>Digital Client Advisor</h4>
+                            <h5>
+                                <a href="https://www.dior.com/" target="_blank">Christian Dior Couture</a>
+                                <span class="pipe">|</span> Paris <span class="pipe">|</span> Jan 2023 - Jun 2024</h5>
+                            <p class="company-desc">One of the world's leading luxury maisons, part of the LVMH group, present across 40+ markets.</p>
+                            <ul>
+                                <li>Provided multilingual customer support for an international luxury clientele</li>
+                                <li>Developed deep expertise in Dior products, collections, craftsmanship and brand heritage</li>
+                                <li>Partnered with e-commerce, logistics and retail teams to ensure a seamless client experience</li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h4>Multilingual Digital Project Manager</h4>
+                            <h5>
+                                <a href="https://www.datawords.com/" target="_blank">Datawords</a>
+                                <span class="pipe">|</span> Paris <span class="pipe">|</span> Sep 2015 - Sep 2019</h5>
+                            <p class="company-desc">International digital marketing agency serving global brands, with a team of 800+.</p>
+                            <ul>
+                                <li>Managed multilingual localization projects for leading international brands across web, e-commerce and digital platforms</li>
+                                <li>Coordinated translators, reviewers, local markets and external agencies throughout the translation workflow</li>
+                                <li>Developed translation guidelines and QA processes to ensure consistency and brand tone of voice</li>
+                                <li>Managed multilingual content using CAT tools, CMS and PIM platforms</li>
+                                <li>Prepared multilingual content for digital deployment and coordinated publication workflows</li>
+                                <li>Designed quality assurance procedures and trained 100+ colleagues</li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Earlier experience</h3>
+                    <ul class="compact-list">
+                        <li><strong>Senior Translation Project Manager</strong> · Labrador Language Services, Paris <span class="pipe">|</span> Jan 2020 - May 2020</li>
+                        <li><strong>Editorial Project Coordinator</strong> · CGI, Tours <span class="pipe">|</span> Sep 2014 - Sep 2015</li>
+                        <li><strong>Editorial Project Coordinator</strong> · Hachette Collections, Paris <span class="pipe">|</span> Oct 2013 - Jul 2014</li>
+                        <li><strong>Syndication &amp; Licensing Intern</strong> · ELLE International, Levallois-Perret <span class="pipe">|</span> Jun 2013 - Oct 2013</li>
+                        <li><strong>Culture Journalist &amp; Senior Picture Editor</strong> · ELLE Russia, Moscow <span class="pipe">|</span> Jul 2008 - Jun 2013</li>
+                        <li><strong>Picture Editor</strong> · Harper's Bazaar Russia, Moscow <span class="pipe">|</span> Sep 2007 - Jul 2008</li>
+                        <li><strong>Freelance Journalist</strong> · Grazia, Burda and other lifestyle titles, Moscow <span class="pipe">|</span> 2006 - 2007</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Education</h3>
+                    <div>
+                        <article>
+                            <h4>MBA - Luxury Brand Marketing &amp; International Management</h4>
+                            <h5>Sup de Luxe&nbsp;<span class="pipe">|</span>&nbsp;Paris</h5>
+                        </article>
+                        <article>
+                            <h4>Master's Degree - Translation &amp; Intercultural Communication</h4>
+                            <h5>Omsk State University&nbsp;<span class="pipe">|</span>&nbsp;Russia</h5>
+                        </article>
+                        <article>
+                            <h4>Master's &amp; Bachelor's Degrees - Art History</h4>
+                            <h5>Paris 1 Panthéon-Sorbonne · University of Burgundy&nbsp;<span class="pipe">|</span>&nbsp;Paris / Dijon</h5>
+                        </article>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
